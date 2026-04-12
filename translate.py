@@ -146,6 +146,7 @@ def main():
     for epoch in range(opt.epoch):
         run(translator, train_loader, base_data.id2r, 'train',
             optimizer, device, opt.padding, epoch + 1, "", time.time(), False)
+        torch.save(translator.state_dict(), f"EXPS/{opt.desc}/model_epoch_{epoch+1}.pt")
     
     print("\nTraining Complete")
 

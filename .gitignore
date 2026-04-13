@@ -1,0 +1,19 @@
+# Ignore model checkpoints (epoch files)
+EXPS/kaggle/model_epoch*
+EXPS/umls-distilbert/model_epoch*
+
+# Or more generally ignore all trained models
+EXPS/**/model_epoch*
+
+# Ignore experiment outputs (optional but recommended)
+EXPS/**/checkpoint*
+EXPS/**/logs/
+EXPS/**/runs/
+EXPS/**/output/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Zip files
+*.zip
